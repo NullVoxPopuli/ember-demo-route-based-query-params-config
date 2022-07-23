@@ -1,7 +1,8 @@
 {{page-title "EmberDemoRouteBasedQueryParamsConfig"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<LinkTo @query={{hash a=1}}>?a=1</LinkTo><br>
+<LinkTo @query={{hash a=2}}>?a=2</LinkTo><br>
+<LinkTo @query={{hash b=2}}>?b=2</LinkTo><br>
+<LinkTo @query={{hash b=1}}>?b=1</LinkTo><br>
 
 {{outlet}}
